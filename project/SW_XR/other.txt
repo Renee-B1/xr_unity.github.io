@@ -1,0 +1,13 @@
+
+run in terminal to start rebuilding:
+npx tailwindcss -i ./SW_XR/src/style/input.css -o ./SW_XR/src/style/output.css --watch
+
+
+
+credits:
+
+southwood homes video: Southern Development Homes created on vimeo https://vimeo.com/1120834345?fl=pl&fe=vl
+
+calendar design by tubik : https://dribbble.com/shots/8576480-Book-Festival-Responsive-Website
+collapsible feature by Ahmed Tag Amer: https://stackoverflow.com/questions/59428035/how-to-implement-nested-collapsibles
+

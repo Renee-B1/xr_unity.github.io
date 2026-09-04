@@ -1,0 +1,219 @@
+/* html {
+    scroll-behavior: smooth;
+} */
+
+#about {
+    background: white;
+    background-image: linear-gradient(#004b8c 0%, #004b8c 100%);
+}
+
+#credits {
+    background: white;
+    background-image: linear-gradient(#004b8c 0%, rgb(1, 30, 73) 100%);
+}
+
+#g1,
+#g2,
+#g3 {
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 
+.space-mono-bold {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.space-mono-regular-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.space-mono-bold-italic {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: italic;
+} */
+
+#title {
+    font-family: "Orbit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+#top_bar {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.14);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4.5px);
+}
+
+/* 
+.bg-circle {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+}
+
+.bg-circle:after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: red;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  top: 30%; change value as required */
+/* right: -20%; change value as required */
+/* } */
+
+
+
+/* start */
+/* * {
+    box-sizing: border-box;
+} */
+
+/* $border: 1px solid #4d4d4d;
+$header-font: 'Poppins', sans-serif; */
+
+img {
+    width: 100%;
+    border-radius: 5px;
+
+    @media screen and (max-width: 599px) {
+        height: 250px;
+        object-fit: cover;
+    }
+}
+
+
+#pt_title {
+    /* $ */
+    font-family: sans-serif;
+}
+
+.dates {
+    color: #ed666f;
+    font-family: sans-serif;
+    /* $ */
+    font-weight: 500;
+}
+
+.note {
+    font-family: sans-serif;
+    /* $ */
+    font-weight: 500;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+.excerpt {
+    font-family: sans-serif;
+    /* $ */
+    font-weight: 500;
+    margin: 0.5rem 0;
+    padding-left: 1rem;
+}
+
+.grid-wrapper {
+
+    /* // Adding grid layout for screen size above 600  */
+    @media screen and (min-width: 600px) {
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 1rem;
+
+    }
+
+    @media screen and (min-width: 1025px) {
+        grid-template-columns: 1fr 2fr 1fr 2fr;
+    }
+
+    @media screen and (min-width: 600px) and (max-width: 1024px) {
+        grid-template-columns: 1fr 2fr;
+    }
+
+}
+
+article {
+    p {
+        font-family: 'Karla', sans-serif;
+        font-size: 0.95rem;
+        color: #c8c8c8;
+    }
+
+    padding-bottom: 1rem;
+    /* $ */
+
+    /* // using Grid areas  */
+
+    &:nth-child(4) {
+        grid-area: 1/2/3/4;
+    }
+
+}
+
+.footer-note {
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 0.9rem;
+    background: white;
+    padding: 1rem;
+    color: black;
+    border-radius: 5px;
+
+    a {
+        color: inherit;
+        font-weight: 600;
+    }
+}
+
+
+
+/* start */
+
+.collapsible {
+  background-color: #eee;
+  color: black;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #004b8c;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: grey;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* second end */
