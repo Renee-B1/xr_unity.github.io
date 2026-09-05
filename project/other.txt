@@ -2,6 +2,9 @@
 run in terminal to start rebuilding:
 npx tailwindcss -i ./SW_XR/src/style/input.css -o ./SW_XR/src/style/output.css --watch
 
+for git:
+npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch
+
 
 
 credits:

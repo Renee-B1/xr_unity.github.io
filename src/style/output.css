@@ -579,20 +579,16 @@ video {
   top: 0px;
 }
 
+.mb-\[20\%\] {
+  margin-bottom: 20%;
+}
+
 .ml-\[6\%\] {
   margin-left: 6%;
 }
 
 .mt-\[10\%\] {
   margin-top: 10%;
-}
-
-.mb-\[40\%\] {
-  margin-bottom: 40%;
-}
-
-.mb-\[20\%\] {
-  margin-bottom: 20%;
 }
 
 .block {
@@ -652,11 +648,6 @@ video {
   width: 100vw;
 }
 
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -692,11 +683,6 @@ video {
 .bg-\[\#004b8c\] {
   --tw-bg-opacity: 1;
   background-color: rgb(0 75 140 / var(--tw-bg-opacity, 1));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[url\(\.\.\/img\/Southwood_development\.jpg\)\] {
@@ -763,11 +749,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
