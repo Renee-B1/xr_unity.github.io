@@ -5,6 +5,12 @@ npx tailwindcss -i ./SW_XR/src/style/input.css -o ./SW_XR/src/style/output.css -
 for git:
 npx tailwindcss -i ./src/style/input.css -o ./src/style/output.css --watch
 
+for git:
+cannot run open live server using direct paths because for github pages to actually show, you must put evenything in the folders
+IT wants so hooray
+when accessing or viewing website for changes or deployment use:
+https://renee-b1.github.io/xr_unity.github.io/
+
 
 
 credits:
