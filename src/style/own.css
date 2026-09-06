@@ -2,14 +2,19 @@
     scroll-behavior: smooth;
 } */
 
-#about {
+#about, #info {
     background: white;
     background-image: linear-gradient(#004b8c 0%, #004b8c 100%);
 }
 
-#credits {
+#team {
     background: white;
-    background-image: linear-gradient(#004b8c 0%, rgb(1, 30, 73) 100%);
+    background-image: linear-gradient(#004b8c 0%, rgb(1, 26, 65) 100%);
+}
+
+#credits {
+    background: rgb(1, 26, 65) 100%;
+    /* background-image: linear-gradient(#004b8c 0%, rgb(1, 30, 73) 100%); */
 }
 
 #g1,
