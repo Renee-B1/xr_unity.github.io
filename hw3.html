@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unity First Scene</title>
+
+    <link href="src/style/own.css" rel="stylesheet">
+    <link href="src/style/output.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbit&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="p-3 bg-[#A98307]">
+    <header class="text-2xl">
+        <!-- different id just in case I want to change depending on theme/ style -->
+        <h1 id="fs_title" class="">HW 3: Your First XR Experience</h1>
+    </header>
+    <main id="fs_desc">
+        <p class="underline text-[#763C28] h-15">
+            <a href="index.html">
+                head back to front page
+            </a>
+        </p>
+        <section class="">
+            <p class="text-[#FDF4E3]">
+                A description of the environment you created and the triggers you placed in it.
+                But more importantly, describe the story you are trying to tell and how the player experiences it as
+                they walk through your space:</p>
+            I created a forest-savanna mosaic environment featuring some animals you would find in their natural
+            habitat. Players are meant to approach the environment like it is a safari, discovering and interacting with
+            the diverse characteristics of the areas and animals. The story is what you make it and how you observe the
+            space;
+            a herd of elephants visiting a rushing waterfall for a quick drink, lions roaring from atop jagged rocks
+            warning any who come close,
+            or monkeys deep in the forest fighting back against an unchecked power.
+
+            <br><br>
+            <p class="text-[#FDF4E3]">Three key takeaways about designing walkable, legible 3D space (environment,
+                trigger placement, player guidance):</p>
+            1. Having the environment be open rather than enclosed is both a strength and weakness of this build in
+            terms of
+            walkability. With it being open I did not have to worry much about things being too close to one another or
+            sharing relative space.
+            This meant I wouldn't have to find a way to help the user navigate around things as much and could add as
+            much as I wanted to grow
+            the narrative. Though with an open space that also means the user can get lost, can find the worlds bounds,
+            and may even become uninterested
+            in exploring such a vast plain.
+            <br><br>
+            2. Learning how to make triggers and manipulating trigger elements helped a lot with interactivity. It
+            helped in telling the open
+            world story by resizing the trigger area so the player did not have to walk directly on top of something to
+            activate its event.
+
+            <br><br>
+            3. Colliders are, and forever will be, our best friend.
+            <br><br>
+            <p class="text-[#FDF4E3]">What was the hardest part of this assignment? What did you learn about
+                Unity, XRIT, or your own design process that will help you in future assignments?</p>
+                Hardest part of the assignment was probably organizing (I use this word loosely) and modifying each
+                added element. I added a lot of poly models and needed to grapple with where some files were or where
+                they were placed when putting them into the project. I also had to color blades of grass and trees by hand
+                because their textures did not load with their download (I don't want to talk about it). What I learned about Unity
+                and my own design process is that like a lot of software I have used, if something does not work or isn't going the
+                way you planned it, there are ways to get around any issue. Like for example, point/ spot lights were not working for illuminating the sun the way I wanted
+                so Dr. Wang suggested adding emission to the colors instead to simulate the same effect.
+            <br>
+            <br>
+
+            <iframe width="560" height="320" allowfullscreen="true" allow="autoplay *"
+                title="[Untitled Thu Oct 01 2026 19:27:05 GMT-0400 (Eastern Daylight Time)]"
+                src="https://jmu.instructuremedia.com/embed/2e98fe01-8700-4c59-97ee-cd4c7cc1b412"></iframe>
+        </section>
+        <section class="" id="hw3_credits">
+            <br><br><br><br><br><br>
+            <p>Credits and links to all assets used within Unity project:</p>
+            <section>
+                <p>
+                    poly models - <br>
+                    animals:
+                    Rhinoceros by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/7XutktqrTj_)
+                    Gazelle by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/bPYIQ_XQbrj)
+                    Giraffe by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/0VkNrGSGXOO)
+                    Elephant by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/cx0-TiCjDOx)
+                    Chimpanzee by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/6m3diqGPysx)
+                    Lion by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/3XAJojWxSWz)
+                    Zebra by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/8Ut7mhb-aqK)
+                    Black caiman by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/5etIv4omd7Z)
+                    Tiger by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/5A3w06FXUup)
+                    Bird by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/8Ph79kHbt9s)
+
+                    <br><br>
+                    environment:
+                    basic stone 3 by felix stief [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/3a0ubCurnwU)
+                    Rock by Danni Bittman [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/4TpBWdzKDf2)
+                    Rock Flat by Kenney (https://poly.pizza/m/CrSoV13mCU)
+                    grass yellowing by Steve B [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/eFUpFgjCf0p)
+                    Grass Patch by Danni Bittman [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/dz_TvM39dC7)
+                    Waterfall by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/7mrPbZToHh2)
+                    Vine Covered Tree by Zacharylll [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly
+                    Pizza
+                    (https://poly.pizza/m/dlW4hGKBpiS)
+                    Tree from the savanna by hat_my_guy (https://poly.pizza/m/uLxXsCfYb7)
+                    Sun by jeremy [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/f03BM3V0FRL)
+                    Tree Trunk by Danni Bittman [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/emBcDKepQoj)
+                    Fern by Quaternius (https://poly.pizza/m/jqcanvH7D6)
+                    Banana by Zoe XR [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/7JDar2uHBqg)
+                    Banana Bundle by BlenderVoyage (https://poly.pizza/m/1ySgHdwK0q)
+                    Banana Peeled by Sean Tarrant [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/39KBQGgbPw_)
+                    Cloud Set by Matt Schaefer [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/5XVdqjUIXLR)
+                </p>
+
+
+                <br><br>
+                <p> audio - <br>
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=26589">freesound_community</a>
+                    from <a
+                        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=26589">Pixabay</a>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/sondangsirait419-44635360/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=220044">Sondang
+                        Sirait</a> from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=220044">Pixabay</a>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=324751">DRAGON-STUDIO</a>
+                    from <a
+                        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=324751">Pixabay</a>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=372480">DRAGON-STUDIO</a>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=372480">Pixabay</a>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=472375">DRAGON-STUDIO</a>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=472375">Pixabay</a>
+
+                    https://quicksounds.com/sound/4428/tiger-hiss-2
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/ejah_music-32986949/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=426263">ejah_music</a>
+                    from <a
+                        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=426263">Pixabay</a>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=487679">DRAGON-STUDIO</a>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=487679">Pixabay</a>
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=101281">freesound_community</a>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=101281">Pixabay</a>
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=101282">freesound_community</a>
+                    from <a
+                        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=101282">Pixabay</a>
+                </p>
+            </section>
+
+        </section>
+    </main>
+</body>
+
+</html>
