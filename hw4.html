@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Unity Tool Kit</title>
+
+    <link href="src/style/own.css" rel="stylesheet">
+    <link href="src/style/output.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbit&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body class="p-3 bg-[#283618]">
+    <header class="text-2xl">
+        <!-- different id just in case I want to change depending on theme/ style -->
+        <h1 id="fs_title" class="text-[#74814c]">HW 4: Unity No-Code Toolkit</h1>
+    </header>
+    <main id="fs_desc">
+        <p class="underline text-[#bc6c25] h-15">
+            <a href="index.html">
+                head back to front page
+            </a>
+        </p>
+        <section class="text-[#dda15e]">
+            <p class="text-[#74814d]">
+                Three key takeaways about designing multi-step, XR-native interactions that remain editable by
+                non-programmers. Think about all four of your components and the grab interactable. What did the
+                built-in grab component do well that you tried to copy? What would you do differently?</p>
+            1. What I liked about the grab component is I didn't have to think about its mechanics at all. I read that
+            it was a grabbable item and suddenly it was without me having to think too hard about the physics or what
+            conditionals are being met. Naming conventions is something I like to stick to which is how I named my
+            scripts and the objects in the scene, though I think some of the inspector menu descriptions are either too
+            vague or hard to understand what was being said.
+            <br><br>
+            2. Writing code that works as intended may sound like the bare minimum but I would be disappointed to try
+            and
+            implement a black box component based off its name that just does not work. Making sure your own code works
+            by applying it in a small scenario is a key factor to it being a part of a
+            toolkit. I definitely would not add a screwdriver in my tool belt if it flew off and started breaking
+            windows.
+            <br><br>
+            3. Making sure to use comprehensive and easy to follow language so anyone can learn from or use your
+            creation. While it is nice to be able understand certain terminology, it is equally as important to be able
+            to put what you know into words. Not only does it allow for inclusiveness and collaboration, but being able
+            to
+            reteach it in its barest form helps remember it too.
+
+            <br><br>
+            <p class="text-[#74814c]">This toolkit is what will let your ENG teammates
+                prototype SoXR interactions independently. What does "technical and non-technical contributors
+                collaborating equitably" actually look like in practice once this toolkit exists? What are its limits
+                (i.e., what can't your teammates do without a programmer)?</p>
+            Once this toolkit exists, both technical and non-technical contributors will continue to be important to
+            each stage in the process. Technical contributors will have to not only create the tool kit, but be able to
+            maintain and update it with any feedback from those who interact with it. Non-technical people will also not
+            only give feedback and suggest new elements, but learn new ways they can tell a story and expand on creative
+            inputs and outputs. Without a programmer, any issues that may arise with under-the-hood mechanics or
+            concepts would be lost on those who don't normally deal with code. And on the other hand, the
+            biggest limit for programmers is while we built it and know how to use our creation
+            (for the most part), it also means we are somewhat "blind" to use cases we never thought of (or didn't feel
+            like handling), so we need someone who is less technical to actually test it.
+
+            <br><br>
+            <p class="text-[#74814c]">Challenges: What was the hardest part of this assignment? What did you learn from
+                testing your guide with someone else?</p>
+            Without saying the hardest part of the project was the entire thing, the most difficult challenges I faced
+            by far was writing the scripts and understanding what colliders/ code needed to be attached to which object.
+            I have yet to test the guide with someone else but I look forward to them being hopefully less confused than
+            I was.
+            <br>
+            <br>
+            <br>
+            <iframe width="560" height="320" allowfullscreen="true" allow="autoplay *"
+                title="Copy: [Untitled Wed Oct 28 2026 22:17:16 GMT-0400 (Eastern Daylight Time)]"
+                src="https://jmu.instructuremedia.com/embed/e4eacea1-28a5-4589-8113-fa019d45edcd"></iframe><br>
+            <section class="text-[#74814d]">Links to scripts:
+                <p class="underline text-[#bc6c25]">
+                    <a href="ColliderTrigger.cs">
+                        Collider script
+                    </a><br>
+                    <a href="OnTriggerAction.cs">
+                        Collision Trigger script
+                    </a><br>
+                    <a href="SequenceAction.cs">
+                        Sequence script
+                    </a><br>
+                    <a href="TimeTrigger.cs">
+                        Time Trigger script
+                    </a>
+                </p>
+                <br><br><br><br>
+            </section>
+            <section class="text-[#74814c] p-2">
+                <p class="text-2xl">Documentation Guide</p>
+                <section class="text-[#dda15e]">
+                    The toolkit is an established set of components built inside Unity that can be used by people with
+                    little to no
+                    coding experience or are programmers. The components are made to be easy to use by dragging and
+                    dropping
+                    them wherever the user desires if its description matches the functionality they want to happen. To
+                    add
+                    any of these it is very simple: first create a 3D object in the space and click on it. Selecting it
+                    will
+                    cause a menu window called "Inspector" to appear on the right hand side. Click "Add Component" and
+                    type
+                    in the name of the built script/ known functionality and select it.<br> Now lets go further into
+                    depth of
+                    some of the "tools" created:
+                </section>
+                <br>
+                <p>Grab Interactable -<br></p>
+                <section class="text-[#dda15e]">
+                    Allows an object to be grabbed by the user. You would use this when you want the player to be able
+                    to move or interact with an object by picking it up. For example, allowing the player to pick up a
+                    ball and throw it.<br>
+                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
+                    A table of every setting, with a plain-language description of what it does and a recommended
+                    default.<br>
+                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
+                    experience).<br>
+                    A "Putting it together" section, which explains how your example scene wires the components
+                    together,
+                    with at least one annotated screenshot.
+                    <br><br><br>
+                </section>
+                <p>OnTriggerAction -<br></p>
+                <section class="text-[#dda15e]">
+                    Causes an event to occur when the player walks into an area. You would use this when you want
+                    something to happen when the user enters/ exits a area. Like for example, the user walks into a room
+                    and the lights turn on.<br>
+                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
+                    A table of every setting, with a plain-language description of what it does and a recommended
+                    default.<br>
+                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
+                    experience).<br>
+                    A "Putting it together" section, which explains how your example scene wires the components
+                    together,
+                    with at least one annotated screenshot.<br><br><br>
+                </section>
+                <p>TimedAction -<br></p>
+                <section class="text-[#dda15e]">
+                    After a set amount of time, some event will occur. Use this when you want something to happen after
+                    time passes. For example, after a player presses a button, they have 30 seconds to get across the
+                    room
+                    before the floor becomes lava.<br>
+                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
+                    A table of every setting, with a plain-language description of what it does and a recommended
+                    default.<br>
+                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
+                    experience).<br>
+                    A "Putting it together" section, which explains how your example scene wires the components
+                    together,
+                    with at least one annotated screenshot.<br><br><br>
+                </section>
+                <p>CollideAction -<br></p>
+                <section class="text-[#dda15e]">
+                    When an object or player hits another object, an event will occur. You would use this when you want
+                    something to happen after something hits another thing. For example, the user drops a plate onto the
+                    ground causing it to break.<br>
+                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
+                    A table of every setting, with a plain-language description of what it does and a recommended
+                    default.<br>
+                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
+                    experience).<br>
+                    A "Putting it together" section, which explains how your example scene wires the components
+                    together,
+                    with at least one annotated screenshot.<br><br><br>
+                </section>
+                <p>SequenceAction -<br></p>
+                <section class="text-[#dda15e]">
+                    Allows for events to occur sequentially after one another. Use this when you want another event to
+                    follow a previous event after some time. For example, after entering a haunted house a scary noise
+                    will play,
+                    then after a delay, a bat will fly by.<br>
+                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
+                    A table of every setting, with a plain-language description of what it does and a recommended
+                    default.<br>
+                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
+                    experience).<br>
+                    A "Putting it together" section, which explains how your example scene wires the components
+                    together,
+                    with at least one annotated screenshot.<br><br>
+                </section>
+            </section>
+        </section>
+        <section class="text-[#74814d]" id="hw4_credits">
+            <br><br><br><br>
+            <p>Credits and links to all assets used within Unity project:</p>
+            <section>
+                <p>
+                    poly models - <br>
+                    Soda Can by jeremy [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/cNjAaDY27fQ)<br>
+                    Vending Macine by DavesParable [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/KJxNU39kOa)<br>
+                    Gold Coin by Zsky [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/XbGSovhszf)<br>
+                    Crushed Soda Can by Thermo_DynAmics [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly
+                    Pizza (https://poly.pizza/m/F9RZE7EnWl)<br>
+                    Trash can by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza
+                    (https://poly.pizza/m/0yT-YR5yO4L)<br>
+                    Police Car by Kay Lousberg (https://poly.pizza/m/Uj7i2vlmir)
+                </p>
+
+                <br><br>
+                <p> audio - <br>
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=20000">freesound_community</a><br>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=20000">Pixabay</a><br>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/mrvailen-49292507/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=312418">MrVailen</a><br>
+                    from <a
+                        href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=312418">Pixabay</a><br>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=39140">freesound_community</a><br>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=39140">Pixabay</a><br>
+
+                    Sound Effect by <a
+                        href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=40747">freesound_community</a><br>
+                    from <a
+                        href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=40747">Pixabay</a><br>
+                </p>
+            </section>
+
+        </section>
+    </main>
+</body>
+
+</html>
