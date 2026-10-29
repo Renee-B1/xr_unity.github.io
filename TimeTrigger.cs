@@ -3,15 +3,17 @@ using UnityEngine.Events;
 
 public class TimeTrigger : MonoBehaviour
 {
-    // public GameObject objectToHide;
     // public string triggerTagName = "Timer";
+    [Tooltip("The seconds to wait before the event happens")]
     public float duration = 10.0F;
     private float elapsedTime = 0.0F;
 
+    [Tooltip("When the user starts the scene the event will either happen immediately or only after triggered")]
     public bool startOnAwake = false;
+    [Tooltip("If you want the timer to restart and repeat the triggered event")]
     public bool repeat = false;
 
-    [AddComponentMenu("0 means repeat forever")]
+    [Tooltip("How many times the user wants the timer to reset and repeat its event")]
     public int repeatCount = 0;
 
     public UnityEvent onTimerComplete;

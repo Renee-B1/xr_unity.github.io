@@ -3,8 +3,9 @@ using UnityEngine.Events;
 
 public class SequenceAction : MonoBehaviour
 {
+    [Tooltip("The ordered events you want to occur one after another")]
     public UnityEvent[] steps;
-    // seconds to wait before each step fires
+    [Tooltip("The seconds to wait before each event happens")]
     public float[] stepDelays;
 
     private int curr_step = 0;
@@ -37,7 +38,7 @@ public class SequenceAction : MonoBehaviour
         if (stepDelays.Length < steps.Length)
         {
             // Dr. Wang if you're reading this can i make it a list instead of an array
-            // for (int i = 0; i < missing; i++)
+            // for (int i = stepDelays.Length; i < missing + steps.Length; i++)
             // {
             //     stepDelays[i] = 0f;
             // }
