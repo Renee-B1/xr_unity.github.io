@@ -28,19 +28,19 @@
 
 </head>
 
-<body class="p-3 bg-[#283618]">
+<body class="p-3 bg-[#540b0e]">
     <header class="text-2xl">
         <!-- different id just in case I want to change depending on theme/ style -->
-        <h1 id="fs_title" class="text-[#74814c]">HW 4: Unity No-Code Toolkit</h1>
+        <h1 id="fs_title" class="text-[#e09f3e]">HW 4: Unity No-Code Toolkit</h1>
     </header>
     <main id="fs_desc">
-        <p class="underline text-[#bc6c25] h-15">
+        <p class="underline text-[#001d3d] h-15">
             <a href="index.html">
                 head back to front page
             </a>
         </p>
-        <section class="text-[#dda15e]">
-            <p class="text-[#74814d]">
+        <section class="text-[#e09f3e]">
+            <p class="text-[#fff3b0]">
                 Three key takeaways about designing multi-step, XR-native interactions that remain editable by
                 non-programmers. Think about all four of your components and the grab interactable. What did the
                 built-in grab component do well that you tried to copy? What would you do differently?</p>
@@ -64,7 +64,7 @@
             reteach it in its barest form helps remember it too.
 
             <br><br>
-            <p class="text-[#74814c]">This toolkit is what will let your ENG teammates
+            <p class="text-[#fff3b0]">This toolkit is what will let your ENG teammates
                 prototype SoXR interactions independently. What does "technical and non-technical contributors
                 collaborating equitably" actually look like in practice once this toolkit exists? What are its limits
                 (i.e., what can't your teammates do without a programmer)?</p>
@@ -79,7 +79,7 @@
             like handling), so we need someone who is less technical to actually test it.
 
             <br><br>
-            <p class="text-[#74814c]">Challenges: What was the hardest part of this assignment? What did you learn from
+            <p class="text-[#fff3b0]">Challenges: What was the hardest part of this assignment? What did you learn from
                 testing your guide with someone else?</p>
             Without saying the hardest part of the project was the entire thing, the most difficult challenges I faced
             by far was writing the scripts and understanding what colliders/ code needed to be attached to which object.
@@ -91,8 +91,8 @@
             <iframe width="560" height="320" allowfullscreen="true" allow="autoplay *"
                 title="Copy: [Untitled Wed Oct 28 2026 22:17:16 GMT-0400 (Eastern Daylight Time)]"
                 src="https://jmu.instructuremedia.com/embed/e4eacea1-28a5-4589-8113-fa019d45edcd"></iframe><br>
-            <section class="text-[#74814d]">Links to scripts:
-                <p class="underline text-[#bc6c25]">
+            <section class="text-[#fff3b0]">Links to scripts:
+                <p class="underline text-[#001d3d]">
                     <a href="ColliderTrigger.cs">
                         Collider script
                     </a><br>
@@ -108,9 +108,9 @@
                 </p>
                 <br><br><br><br>
             </section>
-            <section class="text-[#74814c] p-2">
-                <p class="text-2xl">Documentation Guide</p>
-                <section class="text-[#dda15e]">
+            <section class="text-[#fff3b0] p-2">
+                <p class="text-3xl p-2">Documentation Guide</p>
+                <section class="text-[#e09f3e]">
                     The toolkit is an established set of components built inside Unity that can be used by people with
                     little to no
                     coding experience or are programmers. The components are made to be easy to use by dragging and
@@ -119,91 +119,424 @@
                     add
                     any of these it is very simple: first create a 3D object in the space and click on it. Selecting it
                     will
-                    cause a menu window called "Inspector" to appear on the right hand side. Click "Add Component" and
+                    cause a menu window called <b>Inspector</b> to appear on the right hand side. Click <b>Add
+                        Component</b> and
                     type
                     in the name of the built script/ known functionality and select it.<br> Now lets go further into
                     depth of
                     some of the "tools" created:
                 </section>
                 <br>
-                <p>Grab Interactable -<br></p>
-                <section class="text-[#dda15e]">
+                <p class="text-xl">Grab Interactable -<br></p>
+                <section class="text-[#e09f3e]">
                     Allows an object to be grabbed by the user. You would use this when you want the player to be able
                     to move or interact with an object by picking it up. For example, allowing the player to pick up a
                     ball and throw it.<br>
                     How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
-                    A table of every setting, with a plain-language description of what it does and a recommended
-                    default.<br>
-                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
-                    experience).<br>
-                    A "Putting it together" section, which explains how your example scene wires the components
-                    together,
-                    with at least one annotated screenshot.
+                    1. Type in <b>XR Grab Interactable</b> after clicking <b>Add Component</b> and select it<br>
+                    2. This menu will appear: <img id="grab_menu" src="grabbable.png"
+                        alt="image of xr grab interactable menu in Unity"><br>
+                    3. And you're done! This is a component already in Unity so if you want to learn more about it
+                    <a id="inline_link"
+                        href="https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.0/manual/xr-grab-interactable.html">
+                        follow this link.
+                    </a><br>
                     <br><br><br>
                 </section>
-                <p>OnTriggerAction -<br></p>
-                <section class="text-[#dda15e]">
+                <p class="text-xl">OnTriggerAction -<br></p>
+                <section class="text-[#e09f3e]">
                     Causes an event to occur when the player walks into an area. You would use this when you want
                     something to happen when the user enters/ exits a area. Like for example, the user walks into a room
                     and the lights turn on.<br>
-                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
-                    A table of every setting, with a plain-language description of what it does and a recommended
-                    default.<br>
-                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
-                    experience).<br>
-                    A "Putting it together" section, which explains how your example scene wires the components
-                    together,
-                    with at least one annotated screenshot.<br><br><br>
+                    1. Type in <b>OnTriggerAction</b> after clicking <b>Add Component</b> and select it<br>
+                    2. This menu will appear: <img id="trigger_menu" src="trigger.png"
+                        alt="image of trigger action menu in Unity">
+                    3. In the <b>Trigger Tag Name</b> box, enter the tag name of the object that will set off the
+                    event<br>
+                    4. Under the <b>On Enter ()</b> or <b>On Exit ()</b> menu click the + sign<br>
+                    5. Drag the object you want the event to effect into this box: <img id="tri_cir"
+                        src="trigger_circle.png" alt="red circle around menu option in trigger menu">
+                    6. The <b>No Function</b> box can now be entered into which is where you will select which event
+                    will
+                    happen to the object you selected
+                    <br><br>
+                    <section
+                        class="relative flex flex-col w-full h-full text-gray-700 bg-[#001d3d] shadow-md rounded-xl bg-clip-border">
+                        <table class="w-full text-left table-auto min-w-max">
+                            <thead>
+                                <tr>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Property</b>
+                                        </p>
+                                    </th>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Description</b>
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Trigger Tag Name</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            The tag assigned to the object which will trigger the event when it comes in
+                                            contact
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>On Enter</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            What event you want to happen when this object enters the area
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>On Exit</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            What event you want to happen when this object exits the area
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section><br>
+                    <section class="">
+                        Common mistakes: <br>
+                        Make sure you add a collision component to the object you want to act as thing that makes the
+                        event happen. Also make sure you check the <b>Is Trigger</b> box!<br>
+                    </section>
+                    <br>
+                    <br><br><br>
                 </section>
-                <p>TimedAction -<br></p>
-                <section class="text-[#dda15e]">
+                <p class="text-xl">TimedAction -<br></p>
+                <section class="text-[#e09f3e]">
                     After a set amount of time, some event will occur. Use this when you want something to happen after
                     time passes. For example, after a player presses a button, they have 30 seconds to get across the
                     room
                     before the floor becomes lava.<br>
-                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
-                    A table of every setting, with a plain-language description of what it does and a recommended
-                    default.<br>
-                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
-                    experience).<br>
-                    A "Putting it together" section, which explains how your example scene wires the components
-                    together,
-                    with at least one annotated screenshot.<br><br><br>
+                    1. Type in <b>TimedAction</b> after clicking <b>Add Component</b> and select it<br>
+                    2. This menu will appear: <img id="time_menu" src="time.png"
+                        alt="image of timed action menu in Unity">
+                    3. Type into the <b>Duration</b> box how many seconds you want to pass before the event happens<br>
+                    4. If you want the countdown to begin as soon as the scene loads, check <b>Start On Awake</b> or
+                    leave it
+                    unchecked so it waits for the specified time<br>
+                    5. Or if you want this timer to reset and repeat its event, check <b>Repeat</b> then specify how
+                    many
+                    times you want it to repeat in <b>Repeat Count</b><br>
+                    6. Drag the object you want the event to effect into this box:<img id="time_cir"
+                        src="time_circle.png" alt="red circle around menu option in time menu">
+                    7. The <b>No Function</b> box can now be entered into which is where you will select which event
+                    will
+                    happen to the object you selected
+                    <br><br>
+                    <section
+                        class="relative flex flex-col w-full h-full text-gray-700 bg-[#001d3d] shadow-md rounded-xl bg-clip-border">
+                        <table class="w-full text-left table-auto min-w-max">
+                            <thead>
+                                <tr>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Property</b>
+                                        </p>
+                                    </th>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Description</b>
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Duration</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            The seconds to wait before the event happens
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Start On Awake</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            When the user starts the scene the event will either happen immediately or
+                                            only after triggered
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Repeat</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            If you want the timer to restart and repeat the triggered event
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Repeat Count</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            How many times the user wants the timer to reset and repeat its event
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>On Timer Complete</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            What event you want to happen when the timer meets the specified duration
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section><br>
+                    <section class="">
+                        Common mistakes: <br>
+                        When dropping objects into the box, know that the event that will occur is what that object
+                        itself is capable of. So for example, if an object had the ability to light up from another
+                        script attached to it, after the timer hits its duration, the function field will be what makes
+                        the event of turning it on happen.<br>
+                    </section>
+                    <br>
+                    <br><br><br>
                 </section>
-                <p>CollideAction -<br></p>
-                <section class="text-[#dda15e]">
+                <p class="text-xl">CollideAction -<br></p>
+                <section class="text-[#e09f3e]">
                     When an object or player hits another object, an event will occur. You would use this when you want
                     something to happen after something hits another thing. For example, the user drops a plate onto the
                     ground causing it to break.<br>
-                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
-                    A table of every setting, with a plain-language description of what it does and a recommended
-                    default.<br>
-                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
-                    experience).<br>
-                    A "Putting it together" section, which explains how your example scene wires the components
-                    together,
-                    with at least one annotated screenshot.<br><br><br>
+                    1. Type in <b>CollideAction</b> after clicking <b>Add Component</b> and select it<br>
+                    2. This menu will appear: <img id="collide_menu" src="collider.png"
+                        alt="image of collider menu in Unity">
+                    3. In the <b>Collider Tag Name</b> box, enter the tag name of the object that will set off the
+                    event<br>
+                    4. Under the <b>On Collision ()</b> menu click the + sign<br>
+                    5. Drag the object you want the event to effect into this box: <img id="coll_cir"
+                        src="collider_circle.png" alt="red circle around menu option in collider menu">
+                    6. The <b>No Function</b> box can now be entered into which is where you will select which event
+                    will
+                    happen to the object you selected
+                    <br><br>
+                    <section
+                        class="relative flex flex-col w-full h-full text-gray-700 bg-[#001d3d] shadow-md rounded-xl bg-clip-border">
+                        <table class="w-full text-left table-auto min-w-max">
+                            <thead>
+                                <tr>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Property</b>
+                                        </p>
+                                    </th>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Description</b>
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Collider Tag Name</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            The tag assigned to the object which will trigger the event when it comes in
+                                            contact
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>On Collision</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            What event you want to happen when this object collides with another
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section><br>
+                    <section class="">
+                        Common mistakes: <br>
+                        A collider needs to be able to hit something rather than just trigger it. This means one of the
+                        objects will need a rigid body and neither object that causes the event can have the <b>Is
+                            Trigger</b> box checked; this will cause things to fall through.<br>
+                    </section>
+                    <br>
+                    <br><br><br>
                 </section>
-                <p>SequenceAction -<br></p>
-                <section class="text-[#dda15e]">
+                <p class="text-xl">SequenceAction -<br></p>
+                <section class="text-[#e09f3e]">
                     Allows for events to occur sequentially after one another. Use this when you want another event to
                     follow a previous event after some time. For example, after entering a haunted house a scary noise
                     will play,
                     then after a delay, a bat will fly by.<br>
-                    How to set it up, with numbered steps and annotated screenshots of the Inspector.<br>
-                    A table of every setting, with a plain-language description of what it does and a recommended
-                    default.<br>
-                    Common mistakes (the troubleshooting list above is a good start, but use your own words and
-                    experience).<br>
-                    A "Putting it together" section, which explains how your example scene wires the components
-                    together,
-                    with at least one annotated screenshot.<br><br>
+                    1. Type in <b>SequenceAction</b> after clicking <b>Add Component</b> and select it<br>
+                    2. This menu will appear: <img id="sequence_menu" src="sequence.png"
+                        alt="image of sequence action menu in Unity">
+                    3. In the <b>Steps</b> menu click the + sign<br>
+                    4. Drag the object you want the event to effect into this box: <img id="seq_cir"
+                        src="seq_circle.png" alt="red circle around menu option in sequence menu">
+                    5. And if you want an event after that one to happen, click the + again<br>
+                    6. The <b>No Function</b> box can now be entered into which is where you will select which event
+                    will
+                    happen to the object you selected<br>
+                    7. In <b>Step Delays</b> click + and enter the seconds you want to delay each ordered event in
+                    <b>Steps</b>
+                    <br><br>
+                    <section
+                        class="relative flex flex-col w-full h-full text-gray-700 bg-[#001d3d] shadow-md rounded-xl bg-clip-border">
+                        <table class="w-full text-left table-auto min-w-max">
+                            <thead>
+                                <tr>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Property</b>
+                                        </p>
+                                    </th>
+                                    <th class="p-4 border-b border-blue-gray-100 bg-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-none text-[#fff3b0] opacity-70">
+                                            <b>Description</b>
+                                        </p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Steps</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            The ordered events you want to occur one after another
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            <b>Step Delays</b>
+                                        </p>
+                                    </td>
+                                    <td class="p-4 border-b border-blue-gray-50">
+                                        <p
+                                            class="block font-sans text-sm antialiased font-normal leading-normal text-[#fff3b0]">
+                                            The seconds to wait before each event happens
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section><br><br>
+                    <section class="">
+                        Common mistakes: <br>
+                        When adding multiple events, take into account the amount of time the previous event takes and
+                        if it is still occurring.<br>
+                    </section>
+                    <br>
+                    <br><br><br>
+                </section>
+                <section class="">
+                    <h1 class="text-xl">Putting it together</h1>
+                    For my scene I utilized each component to build my story. The coin and soda can are grabbable
+                    objects using the XR Grab Interactable script. But first, to get the soda, I use the Collider
+                    script on the vending machine to simulate feeding a coin into the slot. Once they "collide", a soda
+                    appears and the coin disappears. At the same time, the Time script is moving the sun in the scene
+                    after 30 seconds to appear darker out. Now with my soda appearing, another timer starts from the
+                    Sequence script. As I chug the soda, audio plays after 8 seconds, then the next event is the audio
+                    being stopped after 4 seconds. And finally, because littering is bad, when I throw the soda can onto
+                    the ground being the enter condition, the Trigger script appears a cop car which turns on its sirens
+                    and starts driving toward me.<br><br>
+                    <p class="flex flex-row">
+                        <img class="unity_grab" src="Screenshot 2026-10-29 195502.png" alt="">
+                        <img class="unity_grab" src="Screenshot 2026-10-29 195607.png" alt="">
+                    </p>
                 </section>
             </section>
         </section>
-        <section class="text-[#74814d]" id="hw4_credits">
+        <section class="text-[#001d3d]" id="hw4_credits">
             <br><br><br><br>
-            <p>Credits and links to all assets used within Unity project:</p>
+            <p>Credits and links to all assets within Unity project and assets within HTML used:</p>
             <section>
                 <p>
                     poly models - <br>
@@ -219,8 +552,7 @@
                     (https://poly.pizza/m/0yT-YR5yO4L)<br>
                     Police Car by Kay Lousberg (https://poly.pizza/m/Uj7i2vlmir)
                 </p>
-
-                <br><br>
+                <br>
                 <p> audio - <br>
                     Sound Effect by <a
                         href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=20000">freesound_community</a><br>
@@ -242,8 +574,12 @@
                     from <a
                         href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=40747">Pixabay</a><br>
                 </p>
+                <br>
+                <p>
+                    table code: <a
+                        href="https://www.material-tailwind.com/docs/html/table">https://www.material-tailwind.com/docs/html/table</a>
+                </p>
             </section>
-
         </section>
     </main>
 </body>

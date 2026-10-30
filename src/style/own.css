@@ -226,3 +226,41 @@ article {
 }
 
 /* second end */
+
+
+#grab_menu {
+    width : 250px;
+    height: 700px; 
+}
+#trigger_menu, #time_menu {
+    width : 300px;
+    height: 250px;
+}
+#collide_menu {
+    width : 320px;
+    height: 200px; 
+}
+#sequence_menu {
+    width : 250px;
+    height: 380px; 
+}
+#tri_cir, #time_cir, #coll_cir, #seq_cir
+{
+    width : 250px;
+    height: 100px; 
+}
+
+#inline_link {
+    color: #001d3d;
+    text-decoration: underline;
+}
+
+td {
+    border: solid 2px lightgrey;
+    
+}
+
+.unity_grab {
+    width: 550px;
+    height: 300px;
+}
